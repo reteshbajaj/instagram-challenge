@@ -1,0 +1,7 @@
+- if @pictures.all.any?
+  - @pictures.all.each do |picture|
+    %h2= picture.name
+- else
+  No pictures yet!
+
+%a(href='#') Add a picture
